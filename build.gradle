@@ -1,0 +1,32 @@
+apply plugin: 'java'
+
+group 'com.haozhexu.lombok'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['main/java']
+        }
+    }
+
+    test {
+        java {
+            srcDirs = ['test/java']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+
+    testCompile group: 'junit', name: 'junit', version: junitVersion
+}
