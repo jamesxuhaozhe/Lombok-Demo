@@ -6,7 +6,7 @@ package data;
 @lombok.Data
 public class Account {
 
-    private final int username;
+    private String username;
 
-    private final int password;
+    private String password;
 }
