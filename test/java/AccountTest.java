@@ -12,6 +12,8 @@ public class AccountTest {
         Account account = new Account();
         account.setPassword("password");
         account.setUsername("username");
+        String username = account.getUsername();
+        username = "usernamechange";
         assertEquals("password", account.getPassword());
         assertEquals("username", account.getUsername());
     }
